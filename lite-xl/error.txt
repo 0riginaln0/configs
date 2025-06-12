@@ -1,0 +1,27 @@
+Error: /home/ryzh/Downloads/lite-xl/data/core/tokenizer.lua:236: unfinished capture
+
+stack traceback:
+	[C]: in function 'utf8extra.find'
+	/home/ryzh/Downloads/lite-xl/data/core/tokenizer.lua:236: in local 'find_text'
+	/home/ryzh/Downloads/lite-xl/data/core/tokenizer.lua:342: in function 'core.tokenizer.tokenize'
+	/home/ryzh/Downloads/lite-xl/data/core/doc/highlighter.lua:108: in function 'core.doc.highlighter.tokenize_line'
+	/home/ryzh/Downloads/lite-xl/data/core/doc/highlighter.lua:117: in function 'core.doc.highlighter.get_line'
+	/home/ryzh/Downloads/lite-xl/data/core/docview.lua:444: in function </home/ryzh/Downloads/lite-xl/data/core/docview.lua:440>
+	(...tail calls...)
+	/home/ryzh/Downloads/lite-xl/data/core/docview.lua:587: in upvalue 'old_draw'
+	/home/ryzh/Downloads/lite-xl/data/plugins/linewrapping.lua:529: in function 'core.docview.draw'
+	/home/ryzh/Downloads/lite-xl/data/core/node.lua:594: in function 'core.node.draw'
+	/home/ryzh/Downloads/lite-xl/data/core/node.lua:34: in function 'core.node.propagate'
+	...	(skipping 6 levels)
+	/home/ryzh/Downloads/lite-xl/data/core/rootview.lua:482: in upvalue 'root_view_draw'
+	/home/ryzh/Downloads/lite-xl/data/libraries/widget/init.lua:1539: in upvalue 'draw'
+	/home/ryzh/Downloads/lite-xl/data/plugins/autocomplete.lua:598: in upvalue 'root_view_draw'
+	/home/ryzh/Downloads/lite-xl/data/plugins/contextmenu.lua:32: in upvalue 'root_view_draw'
+	/home/ryzh/Downloads/lite-xl/data/plugins/treeview.lua:497: in function 'core.rootview.draw'
+	/home/ryzh/Downloads/lite-xl/data/core/init.lua:1356: in function 'core.step'
+	/home/ryzh/Downloads/lite-xl/data/core/init.lua:1416: in upvalue 'core_run'
+	/home/ryzh/Downloads/lite-xl/data/plugins/settings.lua:1896: in function 'core.run'
+	(...tail calls...)
+	[string "local core..."]:14: in function <[string "local core..."]:6>
+	[C]: in function 'xpcall'
+	[string "local core..."]:6: in main chunk

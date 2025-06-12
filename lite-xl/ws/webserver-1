@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/projects/webserver", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["active"]=true,["type"]="doc",["selection"]={[1]=40,[2]=1,[3]=40,[4]=1},["filename"]="test.yue",["text"]=false,["scroll"]={["x"]=0,["y"]=1126.0}}}}, directories = {} }

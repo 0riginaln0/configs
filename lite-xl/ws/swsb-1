@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/projects/swsb", documents = {["views"]={[1]={["filename"]="roc-basic-webserver/main.roc",["text"]=false,["type"]="doc",["selection"]={[1]=11,[2]=1,[3]=11,[4]=1},["scroll"]={["x"]=0,["y"]=0},["active"]=true}},["active_view"]=1,["type"]="leaf"}, directories = {} }
