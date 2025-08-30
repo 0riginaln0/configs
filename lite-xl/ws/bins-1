@@ -1,1 +1,1 @@
-return { path = "/home/ryzh/Downloads/bins", documents = {["views"]={[1]={["scroll"]={["y"]=0,["to"]={["y"]=0,["x"]=0},["x"]=0},["module"]="core.emptyview",["type"]="view",["active"]=true}},["type"]="leaf",["active_view"]=1}, directories = {} }
+return { path = "/home/ryzh/Downloads/bins", documents = {["type"]="leaf",["views"]={[1]={["type"]="doc",["active"]=true,["text"]=false,["scroll"]={["y"]=4500.0,["x"]=0},["selection"]={[1]=213,[2]=28,[3]=213,[4]=28},["filename"]="YueScript/src/yue.cpp"}},["active_view"]=1}, directories = {} }

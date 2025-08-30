@@ -1,1 +1,0 @@
-return { path = "/home/ryzh/Downloads/projects/astra-trails", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["text"]=false,["type"]="doc",["scroll"]={["y"]=900.0,["x"]=0},["selection"]={[1]=38,[2]=24,[3]=38,[4]=24},["active"]=true,["filename"]="quickstart/yuemain.yue"}}}, directories = {} }

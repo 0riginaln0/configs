@@ -1,1 +1,0 @@
-return { path = "/home/ryzh/Downloads/ol/examples/web-server", documents = {["type"]="leaf",["views"]={[1]={["filename"]="http2.lisp",["selection"]={[1]=13,[2]=21,[3]=13,[4]=21},["active"]=true,["type"]="doc",["scroll"]={["y"]=0,["x"]=0},["text"]=false}},["active_view"]=1}, directories = {} }

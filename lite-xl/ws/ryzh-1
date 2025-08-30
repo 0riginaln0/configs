@@ -1,1 +1,1 @@
-return { path = "/home/ryzh", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["scroll"]={["y"]=0,["x"]=0,["to"]={["x"]=0,["y"]=0}},["active"]=true,["type"]="view",["module"]="core.emptyview"}}}, directories = {} }
+return { path = "/home/ryzh", documents = {["type"]="leaf",["views"]={[1]={["scroll"]={["to"]={["x"]=0,["y"]=0},["x"]=0,["y"]=0},["type"]="view",["module"]="core.emptyview",["active"]=true}},["active_view"]=1}, directories = {} }
