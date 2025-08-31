@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/bins/YueScript", documents = {["views"]={[1]={["scroll"]={["x"]=0,["to"]={["x"]=0,["y"]=0},["y"]=0},["type"]="view",["module"]="core.emptyview",["active"]=false}},["type"]="leaf",["active_view"]=1}, directories = {} }

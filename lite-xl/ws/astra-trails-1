@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/projects/astra-trails", documents = {["active_view"]=1,["views"]={[1]={["active"]=true,["type"]="view",["scroll"]={["y"]=0,["x"]=0,["to"]={["y"]=0,["x"]=0}},["module"]="core.emptyview"}},["type"]="leaf"}, directories = {} }

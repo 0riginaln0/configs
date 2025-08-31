@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/projects/hqmem", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["type"]="doc",["filename"]="ui.odin",["text"]=false,["selection"]={[1]=30,[2]=1,[3]=30,[4]=1},["scroll"]={["y"]=0,["x"]=0},["active"]=true}}}, directories = {} }

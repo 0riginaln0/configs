@@ -1,1 +1,1 @@
-return {recents={[1]="/home/ryzh/Downloads/projects/hqmem"}, window={[1]=1440,[2]=752,[3]=240,[4]=151,["n"]=4}, window_mode="normal", previous_find={}, previous_replace={}}
+return {recents={[3]="/home/ryzh/Downloads/projects/astra-trails",[1]="/home/ryzh/Downloads/projects/playground/swsb/roc-basic-webserver",[2]="/home/ryzh/Downloads/projects/hqmem",[4]="/home/ryzh/Downloads/bins/YueScript"}, window={[1]=960,[2]=1053,[3]=0,[4]=27,["n"]=4}, window_mode="normal", previous_find={[1]="ui_update"}, previous_replace={}}

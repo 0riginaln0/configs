@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/.config/lite-xl/plugins", documents = {["views"]={[1]={["filename"]="language_roc.lua",["type"]="doc",["scroll"]={["y"]=1400.0,["x"]=0},["text"]=false,["active"]=true,["selection"]={[1]=74,[2]=45,[3]=74,[4]=45}}},["type"]="leaf",["active_view"]=1}, directories = {} }

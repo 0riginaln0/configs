@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/projects/basic-webserver", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["type"]="doc",["filename"]="examples/form-url-encoded.roc",["text"]=false,["selection"]={[1]=2,[2]=41,[3]=2,[4]=41},["scroll"]={["y"]=0,["x"]=0},["active"]=true}}}, directories = {} }
