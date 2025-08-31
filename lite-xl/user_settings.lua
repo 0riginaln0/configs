@@ -2,7 +2,11 @@ return {
   ["config"] = {
     ["animation_rate"] = 1.0,
     ["borderless"] = true,
-    ["fps"] = 60,
+    ["disabled_plugins"] = {},
+    ["enabled_plugins"] = {
+      ["autosaveonfocuslost"] = true
+    },
+    ["fps"] = 75,
     ["line_limit"] = 100,
     ["plugins"] = {
       ["drawwhitespace"] = {
@@ -46,7 +50,7 @@ return {
         ["enabled"] = true
       }
     },
-    ["theme"] = "default",
+    ["theme"] = "vscode-dark",
     ["transitions"] = false
   }
 }
