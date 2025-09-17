@@ -31,6 +31,7 @@ return {
         ["require_tokenization"] = false
       },
       ["minimap"] = {
+        ["avoid_small_docs"] = true,
         ["caret_color"] = {
           [1] = 147,
           [2] = 221,
@@ -50,7 +51,7 @@ return {
         ["enabled"] = true
       }
     },
-    ["theme"] = "vscode-dark",
+    ["theme"] = "default",
     ["transitions"] = false
   }
 }
