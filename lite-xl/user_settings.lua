@@ -6,8 +6,9 @@ return {
     ["enabled_plugins"] = {
       ["autosaveonfocuslost"] = true
     },
-    ["fps"] = 75,
+    ["fps"] = 120,
     ["line_limit"] = 100,
+    ["message_timeout"] = 3,
     ["plugins"] = {
       ["drawwhitespace"] = {
         ["enabled"] = true,
@@ -26,8 +27,8 @@ return {
         }
       },
       ["linewrapping"] = {
-        ["enable_by_default"] = false,
-        ["mode"] = "letter",
+        ["enable_by_default"] = true,
+        ["mode"] = "word",
         ["require_tokenization"] = false
       },
       ["minimap"] = {
@@ -51,7 +52,7 @@ return {
         ["enabled"] = true
       }
     },
-    ["theme"] = "default",
-    ["transitions"] = false
+    ["theme"] = "gruvbox_dark",
+    ["transitions"] = true
   }
 }
