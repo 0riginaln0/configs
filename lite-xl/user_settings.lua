@@ -2,6 +2,20 @@ return {
   ["config"] = {
     ["animation_rate"] = 1.0,
     ["borderless"] = true,
+    ["custom_keybindings"] = {
+      ["doc:toggle-block-comments"] = {
+        [1] = "ctrl+shift+/",
+        [2] = "ctrl+shift+keypad /"
+      },
+      ["doc:toggle-line-comments"] = {
+        [1] = "ctrl+/",
+        [2] = "ctrl+keypad /"
+      },
+      ["treeview:toggle"] = {
+        [1] = "ctrl+\\",
+        [2] = "ctrl+b"
+      }
+    },
     ["disabled_plugins"] = {},
     ["enabled_plugins"] = {
       ["autosaveonfocuslost"] = true
@@ -27,7 +41,7 @@ return {
         }
       },
       ["linewrapping"] = {
-        ["enable_by_default"] = true,
+        ["enable_by_default"] = false,
         ["mode"] = "word",
         ["require_tokenization"] = false
       },
@@ -49,10 +63,10 @@ return {
         ["syntax_highlight"] = true
       },
       ["trimwhitespace"] = {
-        ["enabled"] = true
+        ["enabled"] = false
       }
     },
-    ["theme"] = "gruvbox_dark",
+    ["theme"] = "louis-pilfold",
     ["transitions"] = true
   }
 }

@@ -12,7 +12,6 @@ local style = require "core.style"
 local lspconfig = require "plugins.lsp.config"
 lspconfig.gleam.setup()
 
-
 ------------------------------ Themes ----------------------------------------
 
 -- light theme:

@@ -42,7 +42,7 @@ syntax.add {
   comment = "#",
   patterns = {
     { pattern = "#.*",         type = "comment" }, -- # Comments
-    { pattern = "%f[%a]%u%w*", type = "literal" }, -- Roc Tags, Module Imports.
+    { pattern = "%f[%a]%u%w*", type = "function" }, -- Roc Tags, Module Imports.
     {
       pattern = { '"""', '"""', '\\' },
       type = "string",
@@ -79,15 +79,15 @@ syntax.add {
     { pattern = "=>",   type = "operator" },
     { pattern = "|>",   type = "operator" },
     { pattern = ",",    type = "operator" },
-    
+
     { pattern = "%.%.", type = "operator" }, -- ..
     { pattern = "%.",   type = "operator" }, -- .
-    { pattern = "=",    type = "operator" },
+    -- { pattern = "=",    type = "operator" },
     { pattern = "==",   type = "operator" },
     { pattern = "!=",   type = "operator" },
-    { pattern = "||",   type = "operator" },
+    -- { pattern = "||",   type = "operator" },
     { pattern = "&&",   type = "operator" },
-    { pattern = "|",    type = "operator" },
+    -- { pattern = "|",    type = "operator" },
     { pattern = "+",    type = "operator" },
     { pattern = "-",    type = "operator" },
     { pattern = "*",    type = "operator" },

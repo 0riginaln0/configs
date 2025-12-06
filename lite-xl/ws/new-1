@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Documents/verif/new", documents = {["type"]="leaf",["views"]={[1]={["filename"]="readme.md",["scroll"]={["y"]=771.0,["x"]=0},["type"]="doc",["selection"]={[1]=43,[2]=6,[3]=43,[4]=6},["text"]=false,["active"]=true}},["active_view"]=1}, directories = {} }

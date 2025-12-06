@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/bins/demos", documents = {["views"]={[1]={["active"]=true,["scroll"]={["x"]=0,["y"]=0,["to"]={["x"]=0,["y"]=0}},["module"]="core.emptyview",["type"]="view"}},["active_view"]=1,["type"]="leaf"}, directories = {} }

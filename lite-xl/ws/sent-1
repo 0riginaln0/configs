@@ -1,0 +1,1 @@
+return { path = "/home/ryzh/Downloads/projects/sent", documents = {["views"]={[1]={["scroll"]={["x"]=0,["y"]=3628.0},["type"]="doc",["filename"]="sent.c",["text"]=false,["selection"]={[1]=177,[2]=16,[3]=177,[4]=16},["active"]=true}},["type"]="leaf",["active_view"]=1}, directories = {} }
