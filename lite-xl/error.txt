@@ -1,0 +1,26 @@
+Error: ...sers\first\.config\lite-xl/plugins\litemark\mdlayout.lua:441: attempt to index a nil value (field 'fonts')
+
+stack traceback:
+	...sers\first\.config\lite-xl/plugins\litemark\mdlayout.lua:441: in local 'op'
+	...sers\first\.config\lite-xl/plugins\litemark\mdlayout.lua:661: in function 'plugins.litemark.mdlayout.compute'
+	C:\Users\first\.config\lite-xl/plugins\litemark/init.lua:296: in method 'update_layout'
+	C:\Users\first\.config\lite-xl/plugins\litemark/init.lua:306: in method 'draw'
+	...\first\AppData\Local\Programs\Lite XL\data/core\node.lua:594: in function 'core.node.draw'
+	...\first\AppData\Local\Programs\Lite XL\data/core\node.lua:34: in function 'core.node.propagate'
+	...\first\AppData\Local\Programs\Lite XL\data/core\node.lua:599: in function 'core.node.draw'
+	...\first\AppData\Local\Programs\Lite XL\data/core\node.lua:34: in function 'core.node.propagate'
+	...\first\AppData\Local\Programs\Lite XL\data/core\node.lua:599: in function 'core.node.draw'
+	...\first\AppData\Local\Programs\Lite XL\data/core\node.lua:33: in function 'core.node.propagate'
+	...	(skipping 4 levels)
+	...st\AppData\Local\Programs\Lite XL\data/core\rootview.lua:482: in upvalue 'root_view_draw'
+	...ta\Local\Programs\Lite XL\data/libraries\widget/init.lua:1539: in upvalue 'draw'
+	...ata\Local\Programs\Lite XL\data/plugins\autocomplete.lua:598: in upvalue 'root_view_draw'
+	...Data\Local\Programs\Lite XL\data/plugins\contextmenu.lua:32: in upvalue 'root_view_draw'
+	...AppData\Local\Programs\Lite XL\data/plugins\treeview.lua:497: in function 'core.rootview.draw'
+	...\first\AppData\Local\Programs\Lite XL\data/core/init.lua:1356: in function 'core.step'
+	...\first\AppData\Local\Programs\Lite XL\data/core/init.lua:1416: in upvalue 'core_run'
+	...AppData\Local\Programs\Lite XL\data/plugins\settings.lua:1896: in function 'core.run'
+	(...tail calls...)
+	[string "local core..."]:14: in function <[string "local core..."]:6>
+	[C]: in function 'xpcall'
+	[string "local core..."]:6: in main chunk
