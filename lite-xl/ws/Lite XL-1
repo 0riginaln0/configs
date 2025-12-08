@@ -1,0 +1,1 @@
+return { path = "C:\\Users\\first\\AppData\\Local\\Programs\\Lite XL", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["active"]=true,["type"]="view",["scroll"]={["to"]={["x"]=0,["y"]=0},["x"]=0,["y"]=0},["module"]="core.emptyview"}}}, directories = {} }

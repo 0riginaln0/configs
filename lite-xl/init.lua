@@ -7,11 +7,6 @@ local keymap = require "core.keymap"
 local config = require "core.config"
 local style = require "core.style"
 
-
--- Enable gleam lsp support
-local lspconfig = require "plugins.lsp.config"
-lspconfig.gleam.setup()
-
 ------------------------------ Themes ----------------------------------------
 
 -- light theme:
