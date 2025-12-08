@@ -1,1 +1,0 @@
-return {recents={[3]="C:\\Users\\first\\.config\\lite-xl\\plugins\\litemark",[1]="C:\\Users\\first\\.config\\lite-xl\\plugins",[2]="C:\\Games\\projects\\astra-trails\\quickstart"}, window={[1]=1280,[2]=961,[3]=0,[4]=23,["n"]=4}, window_mode="maximized", previous_find={}, previous_replace={}}

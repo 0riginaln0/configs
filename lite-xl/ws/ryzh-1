@@ -1,1 +1,0 @@
-return { path = "/home/ryzh", documents = {["views"]={[1]={["text"]=false,["scroll"]={["x"]=0,["y"]=2700.0},["filename"]=".bashrc",["selection"]={[1]=136,[2]=52,[3]=136,[4]=52},["active"]=true,["type"]="doc"}},["active_view"]=1,["type"]="leaf"}, directories = {} }

@@ -1,1 +1,0 @@
-return { path = "/home/ryzh/Downloads/projects/hqmem", documents = {["views"]={[1]={["selection"]={[1]=23,[2]=6,[3]=23,[4]=6},["active"]=true,["scroll"]={["x"]=0,["y"]=0},["text"]=false,["type"]="doc",["filename"]="game/config.odin"}},["active_view"]=1,["type"]="leaf"}, directories = {} }

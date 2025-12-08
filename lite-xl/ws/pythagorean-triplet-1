@@ -1,1 +1,0 @@
-return { path = "/home/ryzh/exercism/gleam/pythagorean-triplet", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["active"]=true,["module"]="core.emptyview",["scroll"]={["y"]=0,["to"]={["y"]=0,["x"]=0},["x"]=0},["type"]="view"}}}, directories = {} }

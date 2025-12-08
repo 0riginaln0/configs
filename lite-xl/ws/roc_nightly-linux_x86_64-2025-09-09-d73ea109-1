@@ -1,1 +1,0 @@
-return { path = "/home/ryzh/Downloads/bins/roc-linux_x86_64-alpha4-rolling/roc_nightly-linux_x86_64-2025-09-09-d73ea109", documents = {["views"]={[1]={["scroll"]={["x"]=0,["y"]=0},["selection"]={[1]=20,[2]=23,[3]=20,[4]=23},["active"]=true,["text"]=false,["filename"]="main.roc",["type"]="doc"}},["active_view"]=1,["type"]="leaf"}, directories = {} }

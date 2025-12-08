@@ -1,1 +1,0 @@
-return { path = "/home/ryzh/Downloads/projects/hqmem_website", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["active"]=true,["scroll"]={["x"]=0,["y"]=50.0},["text"]=false,["type"]="doc",["filename"]="main.lua",["selection"]={[1]=22,[2]=27,[3]=22,[4]=27}}}}, directories = {} }
