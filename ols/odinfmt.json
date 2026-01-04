@@ -8,5 +8,6 @@
   "space_single_line_blocks": true,
   "align_struct_fields": true,
   "align_struct_values": true,
-  "newline_style": "LF"
+  "newline_style": "LF",
+  "newline_limit": 1
 }
