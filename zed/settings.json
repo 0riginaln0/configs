@@ -10,7 +10,7 @@
   "disable_ai": true,
   "remove_trailing_whitespace_on_save": true,
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   "show_whitespaces": "selection",
   "sticky_scroll": {
@@ -19,8 +19,8 @@
   "hard_tabs": false,
   "icon_theme": "Colored Zed Icons Theme Dark",
   "format_on_save": "on",
-  "buffer_font_size": 17.0,
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 18.0,
+  "buffer_font_family": "Iosevka",
   "buffer_line_height": "comfortable",
   "ui_font_size": 17.0,
   "ui_font_family": ".SystemUIFont",
@@ -28,11 +28,11 @@
   "telemetry": {
     "metrics": false,
   },
-  "theme": "Github Dark",
-  "languages": {
-    "Odin": {
-      "tab_size": 8,
-      "hard_tabs": true,
-    },
-  },
+  "theme": "One Dark",
+  // "languages": {
+  //   "Odin": {
+  //     "tab_size": 2,
+  //     "hard_tabs": true,
+  //   },
+  // },
 }
