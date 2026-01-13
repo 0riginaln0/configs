@@ -18,7 +18,6 @@
     "enabled": true,
   },
   "hard_tabs": false,
-  "icon_theme": "Colored Zed Icons Theme Dark",
   "format_on_save": "on",
   "buffer_font_size": 18.0,
   "buffer_font_family": "Iosevka",
@@ -29,11 +28,10 @@
   "telemetry": {
     "metrics": false,
   },
-  "theme": "One Dark",
-  // "languages": {
-  //   "Odin": {
-  //     "tab_size": 2,
-  //     "hard_tabs": true,
-  //   },
-  // },
+  "theme": "Dracula Light (Alucard)",
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+    },
+  },
 }
