@@ -28,10 +28,13 @@
   "telemetry": {
     "metrics": false,
   },
-  "theme": "Dracula Light (Alucard)",
+  "theme": "CrystalTheme",
   "languages": {
     "Python": {
       "tab_size": 4,
     },
+    // "Crystal": {
+    //   "enable_language_server": false,
+    // },
   },
 }
