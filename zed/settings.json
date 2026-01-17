@@ -33,8 +33,14 @@
     "Python": {
       "tab_size": 4,
     },
-    // "Crystal": {
-    //   "enable_language_server": false,
-    // },
+    "Crystal": {
+      // "enable_language_server": false,
+      "formatter": {
+        "external": {
+          "command": "crystal",
+          "arguments": ["tool", "format", "-"],
+        },
+      },
+    },
   },
 }
