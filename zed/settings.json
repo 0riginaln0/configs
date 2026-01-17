@@ -28,7 +28,7 @@
   "telemetry": {
     "metrics": false,
   },
-  "theme": "CrystalTheme",
+  "theme": "One Dark",
   "languages": {
     "Python": {
       "tab_size": 4,
