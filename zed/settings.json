@@ -28,7 +28,7 @@
   "telemetry": {
     "metrics": false,
   },
-  "theme": "One Dark",
+  "theme": "Nordic Syntax", // Nordic theme extension
   "languages": {
     "Python": {
       "tab_size": 4,
