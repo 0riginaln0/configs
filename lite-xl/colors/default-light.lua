@@ -25,6 +25,9 @@ style.good = { common.color "#4CAF50" }
 style.warn = { common.color "#FFC107" }
 style.error = { common.color "#F44336" }
 style.modified = { common.color "#2196F3" }
+style.guide = { common.color "#d0d0d0" }
+style.guide_highlight = { common.color "#999999" }
+
 
 style.syntax["normal"] = { common.color "#333333" }   -- ( ) { }
 style.syntax["symbol"] = { common.color "#333333" }
