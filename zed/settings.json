@@ -33,6 +33,9 @@
     "Python": {
       "tab_size": 4,
     },
+    "Odin": {
+      "tab_size": 4,
+    },
     "Crystal": {
       // "enable_language_server": false,
       "formatter": {
