@@ -7,43 +7,44 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "tab_size": 2,
-  "disable_ai": true,
-  "remove_trailing_whitespace_on_save": true,
-  "inlay_hints": {
-    "enabled": false,
-  },
-  "show_whitespaces": "selection",
-  "sticky_scroll": {
-    "enabled": true,
-  },
-  "hard_tabs": false,
-  "format_on_save": "on",
-  "buffer_font_size": 18.0,
-  "buffer_font_family": "Iosevka",
-  "buffer_line_height": "comfortable",
-  "ui_font_size": 17.0,
-  "ui_font_family": ".SystemUIFont",
-  "base_keymap": "VSCode",
-  "telemetry": {
-    "metrics": false,
-  },
-  "theme": "Nordic Syntax", // Nordic theme extension
-  "languages": {
-    "Python": {
-      "tab_size": 4,
+    "tab_size": 4,
+    "disable_ai": true,
+    "remove_trailing_whitespace_on_save": true,
+    "inlay_hints": {
+        "enabled": false,
     },
-    "Odin": {
-      "tab_size": 4,
+    "show_whitespaces": "selection",
+    "sticky_scroll": {
+        "enabled": true,
     },
-    "Crystal": {
-      // "enable_language_server": false,
-      "formatter": {
-        "external": {
-          "command": "crystal",
-          "arguments": ["tool", "format", "-"],
-        },
-      },
+    "hard_tabs": false,
+    "format_on_save": "on",
+    "buffer_font_size": 18.0,
+    "buffer_font_family": "Iosevka",
+    "buffer_line_height": "comfortable",
+    "ui_font_size": 17.0,
+    "ui_font_family": ".SystemUIFont",
+    "base_keymap": "VSCode",
+    "telemetry": {
+        "metrics": false,
     },
-  },
+    "theme": "One Dark",
+    "languages": {
+        // "Python": {
+        //   "tab_size": 4,
+        // },
+        // "Odin": {
+        //   "tab_size": 4,
+        // },
+        // "Crystal": {
+        //   // "enable_language_server": false,
+        //   "formatter": {
+        //     "external": {
+        //       "command": "crystal",
+        //       "arguments": ["tool", "format", "-"],
+        //     },
+        //   },
+        //   "language_servers": ["liger"],
+        // },
+    },
 }
