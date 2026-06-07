@@ -1,0 +1,24 @@
+```sh
+git config --global alias.c 'commit -a -m'
+git config --global alias.s '!f() { git reset --soft HEAD~$1 && git commit -m "$2"; }; f'
+git config --global alias.p push
+```
+
+```sh
+# do change
+git c "first change"
+
+
+# do change
+git c "second change"
+
+# check how many commits you want to squash
+git status
+git log
+
+# Squach commits (Soft reset and recommit)
+git s 2 "combined changes"
+
+# push into main
+git p
+```
