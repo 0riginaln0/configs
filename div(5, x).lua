@@ -33,21 +33,19 @@ local function kelvin_to_rgb(kelvin)
   
   if temp <= 66 then
     g = temp
-    g = (99.4708025861 * math.log(g) - 161.1195636625)
+    g = 99.4708025861 * math.log(g) - 161.1195636625
   else
     g = temp - 60
-    g = (288.1221695283 * (g ^ -0.0755148492))
+    g = 288.1221695283 * (g ^ -0.0755148492)
   end
-  
+
   if temp >= 66 then
     b = 1.0
+  elseif temp <= 19 then
+    b = 0.0
   else
-    if temp <= 19 then
-      b = 0.0
-    else
-      b = temp - 10
-      b = (138.5177312231 * math.log(b) - 305.0447927307)
-    end
+    b = temp - 10
+    b = 138.5177312231 * math.log(b) - 305.0447927307
   end
   
   return clamp(0, 255, r),
