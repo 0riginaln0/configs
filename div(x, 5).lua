@@ -1,7 +1,11 @@
 local style = require "core.style"
 local common = require "core.common"
 
-local NIGHT_MODE_INTENSITY = 0 -- [0, 1, ... 100]
+local NIGHT_MODE_INTENSITY = 10 -- [0, 1, ... 100]
+
+local function minmax(min, max, value)
+	return math.max(min, math.min(max, value))
+end
 
 local function hex_to_rgb(hex_str)
   local hex_str = hex_str:gsub("#", "")
@@ -16,7 +20,7 @@ end
 
 -- taken from https://tannerhelland.com/2012/09/18/convert-temperature-rgb-algorithm-code.html
 local function kelvin_to_rgb(kelvin)
-  local temp = math.max(1000, math.min(40000, kelvin)) / 100
+  local temp = minmax(1000, 40000, kelvin) / 100
   
   local r, g, b
   
@@ -46,22 +50,22 @@ local function kelvin_to_rgb(kelvin)
     end
   end
   
-  return math.max(0, math.min(255, r)),
-         math.max(0, math.min(255, g)),
-         math.max(0, math.min(255, b))
+  return minmax(0, 255, r),
+         minmax(0, 255, g),
+         minmax(0, 255, b)
 end
 
 local function apply_night_mode(hex_color, intensity_percent)
-  local intensity = math.max(0, math.min(100, intensity_percent)) / 100
+  local intensity = minmax(0, 100, intensity_percent) / 100
   local target_kelvin = 6500 - (intensity * (6500 - 1200))
 
   local night_r, night_g, night_b = kelvin_to_rgb(target_kelvin)
   local r, g, b = hex_to_rgb(hex_color)
   local base_r, base_g, base_b = kelvin_to_rgb(6500)
   
-  local r_new = math.max(0, math.min(255, math.floor(r * (night_r / base_r))))
-  local g_new = math.max(0, math.min(255, math.floor(g * (night_g / base_g))))
-  local b_new = math.max(0, math.min(255, math.floor(b * (night_b / base_b))))
+  local r_new = minmax(0, 255, math.floor(r * (night_r / base_r)))
+  local g_new = minmax(0, 255, math.floor(g * (night_g / base_g)))
+  local b_new = minmax(0, 255, math.floor(b * (night_b / base_b)))
 
   return rgb_to_hex(r_new, g_new, b_new)
 end
