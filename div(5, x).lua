@@ -70,23 +70,24 @@ end
 
 local function get_colors(intensity)
   intensity = intensity or 0
+  local function C(hex) return apply_night_mode(hex, intensity) end
 
   return {
-    doc_background   = apply_night_mode("#f5f5f5", intensity), -- code background
-    doc_gray_lighter = apply_night_mode("#e0e0e0", intensity), -- editor background, line with cursor on it
-    doc_gray_light   = apply_night_mode("#d0d0d0", intensity), -- selection, line_guide
-    doc_gray         = apply_night_mode("#b0b0b0", intensity), -- scrollbar
-    doc_gray_dark    = apply_night_mode("#999999", intensity), -- line number, line_guide_highlight, scrollbar hovered
-    doc_gray_darker  = apply_night_mode("#555555", intensity), -- line number with cursor on line
-    purple_light     = apply_night_mode("#ded9ff", intensity), -- search selection result
+    doc_background   = C("#f5f5f5"), -- code background
+    doc_gray_lighter = C("#e0e0e0"), -- editor background, line with cursor on it
+    doc_gray_light   = C("#d0d0d0"), -- selection, line_guide
+    doc_gray         = C("#b0b0b0"), -- scrollbar
+    doc_gray_dark    = C("#999999"), -- line number, line_guide_highlight, scrollbar hovered
+    doc_gray_darker  = C("#555555"), -- line number with cursor on line
+    purple_light     = C("#ded9ff"), -- search selection result
 
-    just_black     = apply_night_mode("#333333", intensity), -- normal, symbol
-    comment_gray   = apply_night_mode("#9E9E9E", intensity), -- comments
-    keyword_purple = apply_night_mode("#9C27B0", intensity), -- keywords
-    keyword_red    = apply_night_mode("#ad1403", intensity), -- other keywords
-    literal_bronze = apply_night_mode("#9e580d", intensity), -- numbers, literals
-    string_gold    = apply_night_mode("#b58900", intensity), -- strings
-    just_blue      = apply_night_mode("#0078D7", intensity), -- operators, functions
+    just_black     = C("#333333"), -- normal, symbol
+    comment_gray   = C("#9E9E9E"), -- comments
+    keyword_purple = C("#9C27B0"), -- keywords
+    keyword_red    = C("#ad1403"), -- other keywords
+    literal_bronze = C("#9e580d"), -- numbers, literals
+    string_gold    = C("#b58900"), -- strings
+    just_blue      = C("#0078D7"), -- operators, functions
   }
 end
 
