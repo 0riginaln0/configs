@@ -14,7 +14,8 @@ local function rgb_to_hex(r, g, b)
   return string.format("#%02x%02x%02x", r, g, b)
 end
 
-local function kelvin_to_rgb_coefficients(kelvin)
+-- taken from https://tannerhelland.com/2012/09/18/convert-temperature-rgb-algorithm-code.html
+local function kelvin_to_rgb(kelvin)
   local temp = math.max(1000, math.min(40000, kelvin)) / 100
   
   local r, g, b
@@ -23,15 +24,15 @@ local function kelvin_to_rgb_coefficients(kelvin)
     r = 1.0
   else
     r = temp - 60
-    r = 329.698727446 * (r ^ -0.1332047592) / 255
+    r = 329.698727446 * (r ^ -0.1332047592)
   end
   
   if temp <= 66 then
     g = temp
-    g = (99.4708025861 * math.log(g) - 161.1195636625) / 255
+    g = (99.4708025861 * math.log(g) - 161.1195636625)
   else
     g = temp - 60
-    g = (288.1221695283 * (g ^ -0.0755148492)) / 255
+    g = (288.1221695283 * (g ^ -0.0755148492))
   end
   
   if temp >= 66 then
@@ -41,33 +42,27 @@ local function kelvin_to_rgb_coefficients(kelvin)
       b = 0.0
     else
       b = temp - 10
-      b = (138.5177312231 * math.log(b) - 305.0447927307) / 255
+      b = (138.5177312231 * math.log(b) - 305.0447927307)
     end
   end
   
-  return math.max(0.0, math.min(1.0, r)),
-         math.max(0.0, math.min(1.0, g)),
-         math.max(0.0, math.min(1.0, b))
+  return math.max(0, math.min(255, r)),
+         math.max(0, math.min(255, g)),
+         math.max(0, math.min(255, b))
 end
 
 local function apply_night_mode(hex_color, intensity_percent)
   local intensity = math.max(0, math.min(100, intensity_percent)) / 100
   local target_kelvin = 6500 - (intensity * (6500 - 1200))
-  
-  local k_r, k_g, k_b = kelvin_to_rgb_coefficients(target_kelvin)
-  
+
+  local night_r, night_g, night_b = kelvin_to_rgb(target_kelvin)
   local r, g, b = hex_to_rgb(hex_color)
+  local base_r, base_g, base_b = kelvin_to_rgb(6500)
   
-  local base_r, base_g, base_b = kelvin_to_rgb_coefficients(6500)
-  
-  local r_new = math.floor(r * (k_r / base_r))
-  local g_new = math.floor(g * (k_g / base_g))
-  local b_new = math.floor(b * (k_b / base_b))
-  
-  r_new = math.max(0, math.min(255, r_new))
-  g_new = math.max(0, math.min(255, g_new))
-  b_new = math.max(0, math.min(255, b_new))
-  
+  local r_new = math.max(0, math.min(255, math.floor(r * (night_r / base_r))))
+  local g_new = math.max(0, math.min(255, math.floor(g * (night_g / base_g))))
+  local b_new = math.max(0, math.min(255, math.floor(b * (night_b / base_b))))
+
   return rgb_to_hex(r_new, g_new, b_new)
 end
 
