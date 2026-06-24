@@ -93,7 +93,7 @@ local function get_colors(intensity)
     just_black     = C("#fafaff"), -- normal, symbol
     comment_gray   = C("#9E9E9E"), -- comments
     keyword_purple = C("#FEA3E2"), -- keywords
-    keyword_red    = C("#FF6D7C"), -- other keywords
+    keyword_red    = C("#ff8390"), -- other keywords #ff8390 #FF6D7C
     literal_bronze = C("#FFA94D"), -- numbers, literals
     string_gold    = C("#f7c95c"), -- strings
     just_blue      = C("#96d1ff"), -- operators, functions
