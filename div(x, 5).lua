@@ -1,7 +1,7 @@
 local style = require "core.style"
 local common = require "core.common"
 
-local NIGHT_MODE_INTENSITY = 10 -- [0, 1, ... 100]
+local NIGHT_MODE_INTENSITY = 0 -- [0, 1, ... 100]
 
 local function minmax(min, max, value)
 	return math.max(min, math.min(max, value))
