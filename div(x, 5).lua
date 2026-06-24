@@ -14,7 +14,6 @@ local function rgb_to_hex(r, g, b)
   return string.format("#%02x%02x%02x", r, g, b)
 end
 
--- taken from https://tannerhelland.com/2012/09/18/convert-temperature-rgb-algorithm-code.html
 local function kelvin_to_rgb_coefficients(kelvin)
   local temp = math.max(1000, math.min(40000, kelvin)) / 100
   
