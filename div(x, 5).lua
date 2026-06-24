@@ -4,7 +4,7 @@ local common = require "core.common"
 local NIGHT_MODE_INTENSITY = 0 -- [0, 1, ... 100]
 
 local function minmax(min, max, value)
-	return math.max(min, math.min(max, value))
+  return math.max(min, math.min(max, value))
 end
 
 local function hex_to_rgb(hex_str)
