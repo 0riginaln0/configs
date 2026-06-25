@@ -5,6 +5,8 @@ local keymap = require "core.keymap"
 local style = require "core.style"
 local StatusView = require "core.statusview"
 
+local ICON = ◐
+
 local themes = {
   { name = "div_light(5, x)", module = "colors.div_light(5, x)" },
   { name = "div_dark(5, x)", module = "colors.div_dark(5, x)" },
@@ -12,8 +14,8 @@ local themes = {
 }
 
 local PATH_CONFIG = USERDIR .. "/toggle_colorscheme_settings.lua"
-local Settings = { color_scheme_idx = 1 }
 
+local Settings = { color_scheme_idx = 1 }
 local function clamp(n, lo, hi)
   if n < lo then return lo end
   if n > hi then return hi end
@@ -35,8 +37,9 @@ function Settings:load_settings()
     fp:close()
     local idx = tonumber(raw)
     if idx then
-      self.color_scheme_idx = clamp(idx, 1, #themes)
-      core.reload_module(themes[self.color_scheme_idx].module)
+      core.add_thread(function()
+        self:apply_idx(idx)
+      end)
     end
   else
     core.reload_module(themes[1].module)
@@ -47,18 +50,13 @@ function Settings:apply_idx(idx)
   idx = clamp(idx, 1, #themes)
   self.color_scheme_idx = idx
   core.reload_module(themes[self.color_scheme_idx].module)
+  Settings:save_settings()
 end
 
 function Settings:toggle()
   local next_idx = self.color_scheme_idx + 1
   if next_idx > #themes then next_idx = 1 end
   self:apply_idx(next_idx)
-end
-
-local on_quit_project = core.on_quit_project
-function core.on_quit_project()
-  Settings:save_settings()
-  on_quit_project()
 end
 
 command.add(nil, {
@@ -79,7 +77,7 @@ core.status_view:add_item({
   get_item = function()
     return {
       style.font,
-      "◐ " .. themes[Settings.color_scheme_idx].name
+      ICON.." "..themes[Settings.color_scheme_idx].name
     }
   end,
   position = -1,
