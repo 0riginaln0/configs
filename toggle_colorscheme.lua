@@ -5,7 +5,7 @@ local keymap = require "core.keymap"
 local style = require "core.style"
 local StatusView = require "core.statusview"
 
-local ICON = ◐
+local ICON = "◐"
 
 local themes = {
   { name = "div_light(5, x)", module = "colors.div_light(5, x)" },
